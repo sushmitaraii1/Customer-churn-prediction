@@ -60,5 +60,12 @@ Project Organization
 pip install -r requirements.txt
 ```
 
+### To use application
 
+```
+docker-compose build
+```
 
+```
+docker-compose up -d
+```
