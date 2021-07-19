@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  churnprediction:
+    build: churnprediction/
+    expose: 
+      - "8000"
+    networks:
+      - deploy_network
+    container_name: churnprediction
+
+  streamlit:
+    build: streamlit/
+    depends_on:
+      - churnprediction
+    ports: 
+        - "8501:8501"
+    networks:
+      - deploy_network
+    container_name: streamlit
+
+networks:
+  deploy_network:
+    driver: bridge

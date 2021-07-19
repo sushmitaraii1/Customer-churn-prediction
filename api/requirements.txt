@@ -1,0 +1,14 @@
+uvicorn==0.14.0
+pydantic==1.8.2
+click==7.1.2
+xgboost==0.90
+tqdm==4.61.2
+requests==2.26.0
+pandas==1.1.5
+imbalanced_learn==0.7.0
+matplotlib==3.3.4
+fastapi==0.66.0
+imblearn==0.0
+MultiChoice==0.3.5
+python-dotenv==0.18.0
+scikit_learn==0.24.2
