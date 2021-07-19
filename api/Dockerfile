@@ -1,14 +1,14 @@
 FROM tiangolo/uvicorn-gunicorn:python3.7
 
-RUN mkdir /churnprediction
+RUN mkdir /api
 
-COPY requirements.txt /churnprediction
+COPY requirements.txt /api
 
-WORKDIR /churnprediction
+WORKDIR /api
 
 RUN pip install -r requirements.txt
 
-COPY . /churnprediction
+COPY . /api
 
 EXPOSE 8000
 

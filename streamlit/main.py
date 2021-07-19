@@ -40,7 +40,8 @@ def run():
     if streamlit.button("Predict"):
 
         #servicename:port_address/endpoint for docker
-            response = requests.post("http://localhost:8000/predict", json=data)
+            # response = requests.post("http://localhost:8000/predict", json=data)
+            response = requests.post("http://api:8000/predict", json=data)
             prediction =response.text
             streamlit.success(f"The prediction from model: {prediction}")
 

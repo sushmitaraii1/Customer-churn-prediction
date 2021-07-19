@@ -1,18 +1,18 @@
 version: '3.4'
 
 services:
-  churnprediction:
-    build: churnprediction/
+  api:
+    build: api/
     expose: 
       - "8000"
     networks:
       - deploy_network
-    container_name: churnprediction
+    container_name: api
 
   streamlit:
     build: streamlit/
     depends_on:
-      - churnprediction
+      - api
     ports: 
         - "8501:8501"
     networks:

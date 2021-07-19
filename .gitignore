@@ -91,3 +91,5 @@ target/
 /models/
 
 src/data/churn.csv
+
+/api/models

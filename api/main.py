@@ -12,7 +12,7 @@ app = FastAPI(title='Customer churn analysis', version='1.0',
 LABELS = {"yes": 1, "no": 0}
 
 def load_model():
-    model = pickle.load(open("../models/customer_churn_prediction.pkl","rb"))
+    model = pickle.load(open("./models/customer_churn_prediction.pkl","rb"))
     return model
 
 def tes_pipeline(query):
