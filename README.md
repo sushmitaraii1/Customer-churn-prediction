@@ -1,7 +1,7 @@
 Customer-Churn-Prediction
 ==============================
 
-A short description of the project.
+UI is built with streamlit and api with fastapi. 
 
 Project Organization
 ------------
